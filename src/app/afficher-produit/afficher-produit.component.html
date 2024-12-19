@@ -1,0 +1,30 @@
+<div>
+  <label for="categoryFilter">Filtrer par catégorie :</label>
+  <select id="categoryFilter" (change)="onCategoryChange($event)">
+    <option value="">Toutes les catégories</option>
+    <option *ngFor="let category of categories" [value]="category.id">
+      {{ category.nom }}
+    </option>
+  </select>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nom</th>
+      <th>Prix</th>
+      <th>Catégorie</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let produit of filteredProduits">
+      <td>{{ produit.id }}</td>
+      <td>{{ produit.nom }}</td>
+      <td>{{ produit.prix }}</td>
+      <td>{{ produit.categoryName }}</td>
+    </tr>
+  </tbody>
+  
+</table>
+<button (click)="onCategoryChange($event)">Réinitialiser le filtre</button>

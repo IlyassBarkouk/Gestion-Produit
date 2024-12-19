@@ -1,0 +1,23 @@
+/* Style pour le banner (En-tête) */
+h1 {
+    background-color: #4CAF50;  /* Couleur de fond verte */
+    color: white;               /* Texte en blanc pour un bon contraste */
+    padding: 20px 40px;         /* Un peu de padding pour de l'espace autour du texte */
+    text-align: center;         /* Centrer le texte horizontalement */
+    font-family: 'Arial', sans-serif;  /* Police moderne et lisible */
+    font-size: 2.5em;           /* Taille du texte plus grande pour attirer l'attention */
+    text-transform: uppercase;  /* Transformer le texte en majuscules */
+    border-radius: 10px;        /* Coins arrondis pour un style moderne */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce pour donner un effet de profondeur */
+    margin: 20px 0;             /* Marge autour du titre */
+    letter-spacing: 2px;        /* Espacement des lettres pour plus de clarté */
+  }
+  
+  /* Style pour le survol (hover) du titre */
+  h1:hover {
+    background-color: #45a049;  /* Une teinte plus sombre au survol */
+    cursor: pointer;            /* Changer le curseur en pointeur */
+    transform: scale(1.05);      /* Agrandir légèrement le titre au survol */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Animation fluide */
+  }
+  

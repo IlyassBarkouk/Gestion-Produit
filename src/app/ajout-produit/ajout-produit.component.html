@@ -1,0 +1,24 @@
+<h2>Ajouter un Produit</h2>
+
+<form [formGroup]="produitForm" (ngSubmit)="addProduit()">
+  <div>
+    <label for="nom">Nom du produit :</label>
+    <input id="nom" formControlName="nom" type="text" />
+  </div>
+
+  <div>
+    <label for="prix">Prix :</label>
+    <input id="prix" formControlName="prix" type="number" />
+  </div>
+
+  <div>
+    <label for="categoryId">Catégorie :</label>
+    <select id="categoryId" formControlName="categoryId">
+      <option *ngFor="let category of categories" [value]="category.id">
+        {{ category.nom }}
+      </option>
+    </select>
+  </div>
+
+  <button type="submit" [disabled]="produitForm.invalid">Ajouter</button>
+</form>

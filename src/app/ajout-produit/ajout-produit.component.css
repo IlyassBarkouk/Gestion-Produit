@@ -1,0 +1,97 @@
+/* Style global pour le formulaire */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce autour du formulaire */
+  max-width: 600px; /* Largeur maximale du formulaire */
+  margin: 40px auto; /* Centrer le formulaire au milieu de la page */
+}
+
+/* Style pour le titre */
+h2 {
+  text-align: center;
+  color: white; /* Couleur verte pour le titre */
+  font-family: 'Arial', sans-serif;  /* Police moderne et lisible */
+  font-size: 2.5em;    
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #45a049;
+}
+
+/* Style pour les champs de saisie */
+div {
+  margin-bottom: 15px; /* Espacement entre les champs */
+}
+
+label {
+  display: block;
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif; 
+  margin-bottom: 5px; /* Espacement sous le label */
+  color: #333; /* Couleur sombre pour une bonne lisibilité */
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Changement de bordure au focus */
+input:focus, select:focus {
+  border-color: #4CAF50; /* Bordure verte au focus */
+  background-color: #fff; /* Couleur de fond blanche au focus */
+}
+
+/* Style pour le bouton de soumission */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50; /* Couleur de fond verte */
+  color: white;
+  font-size: 1.2em;
+  font-family: 'Arial', sans-serif; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transition pour l'effet hover */
+}
+
+/* Changement de couleur du bouton au survol */
+button:hover {
+  background-color: #45a049; /* Teinte plus sombre au survol */
+}
+
+/* Désactivation du bouton (si formulaire invalide) */
+button:disabled {
+  background-color: #d3d3d3; /* Couleur grise pour le bouton désactivé */
+  cursor: not-allowed;
+}
+
+/* Responsivité pour les petits écrans */
+@media screen and (max-width: 768px) {
+  form {
+    padding: 15px; /* Moins de padding sur mobile */
+    margin: 20px; /* Moins de marge autour du formulaire sur mobile */
+  }
+
+  h2 {
+    font-size: 1.5em; /* Réduire la taille du titre sur mobile */
+    
+  }
+
+  input, select {
+    font-size: 0.9em; /* Réduire la taille du texte dans les champs */
+  }
+
+  button {
+    font-size: 1em; /* Réduire la taille du texte du bouton sur mobile */
+  }
+}

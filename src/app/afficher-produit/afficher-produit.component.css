@@ -1,0 +1,129 @@
+/* Style global pour la page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Style pour le label et le select */
+div {
+  margin: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-size: 1.2em;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+select {
+  font-size: 1em;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 200px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+select:hover,
+select:focus {
+  border-color: #4CAF50;
+}
+
+/* Style pour la table des produits */
+table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.1em;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+td {
+  font-size: 1em;
+  font-family: 'Arial', sans-serif;
+  color: #555;
+}
+
+/* Style pour la table vide */
+tbody tr:empty {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #999;
+}
+
+/* Style pour le bouton de réinitialisation */
+button {
+  display: block;
+  margin: 20px auto; /* Centrer horizontalement */
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 17px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #45a049; /* Légèrement plus foncé au survol */
+  transform: scale(1.05); /* Effet d'agrandissement */
+  font-family: 'Arial', sans-serif;
+}
+
+button:active {
+  font-family: 'Arial', sans-serif;
+  background-color: #3e8e41; /* Encore plus foncé quand cliqué */
+}
+
+/* Pour l'ajustement responsive (sur les petits écrans) */
+@media screen and (max-width: 768px) {
+  div {
+    margin: 10px;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  table {
+    font-size: 0.9em;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+}

@@ -1,0 +1,27 @@
+nav {
+    display: flex;
+    justify-content: space-around; /* Espacement égal entre les liens */
+    align-items: center; /* Aligner les éléments verticalement au centre */
+    background-color: #333; /* Couleur de fond pour le menu */
+    padding: 10px 0; /* Padding en haut et en bas du menu */
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white; /* Couleur de texte par défaut pour les liens */
+    padding: 10px 20px; /* Espace autour du texte */
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #4CAF50; /* Couleur verte au survol */
+  }
+  
+  /* Active link color */
+  nav a.active {
+    color: #4CAF50;
+    font-weight: bold;
+  }
+  
