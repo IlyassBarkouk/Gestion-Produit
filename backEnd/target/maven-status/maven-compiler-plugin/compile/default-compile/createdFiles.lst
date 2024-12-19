@@ -1,0 +1,15 @@
+com\example\DTO\CategoryDTO.class
+com\example\DTO\ProduitDTO.class
+com\example\Controller\ProduitController.class
+com\example\Repository\CategoryRepository.class
+com\example\Services\ProduitService.class
+com\example\Controller\CategoryController.class
+com\example\Entity\Produit.class
+exception\GlobalExceptionHandler.class
+com\example\Services\CategoryService.class
+com\example\BasicApplication.class
+com\example\Repository\ProduitRepository.class
+com\example\Entity\Category.class
+com\example\Services\CategoryServiceImpl.class
+com\example\Services\ProduitServiceImpl.class
+exception\ResourceNotFoundException.class
